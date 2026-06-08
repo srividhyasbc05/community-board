@@ -1,4 +1,5 @@
 import './App.css';
+import Grid from './components/CardGrid.jsx'
 
 const App = (props) => {
 
@@ -6,7 +7,9 @@ const App = (props) => {
     <div className="App">
       <h1>South Asian Spots in {props.city} </h1>
 
-      
+      <Grid>
+        
+      </Grid>
     </div>
   )
 }

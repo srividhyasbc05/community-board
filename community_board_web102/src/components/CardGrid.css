@@ -1,0 +1,35 @@
+
+
+.card-grid {
+  display: grid;
+
+  /* 4 columns on desktop, shrinks automatically on smaller screens */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: var(--grid-gap);       /* edit --grid-gap in index.css */
+  justify-items: stretch ;
+
+}
+
+/* --- Responsive breakpoints --- */
+
+/* Tablet: 3 columns */
+@media (max-width: 1024px) {
+  .card_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large phone: 2 columns */
+@media (max-width: 700px) {
+  .card_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small phone: 1 column */
+@media (max-width: 440px) {
+  .card_grid {
+    grid-template-columns: 1fr;
+  }
+}
